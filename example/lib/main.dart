@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  String _platformVersion = 'Unknown';
+  String _isHarmonyAnco = 'Unknown';
 
   @override
   void initState() {
@@ -26,13 +26,13 @@ class _MyAppState extends State<MyApp> {
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> initPlatformState() async {
-    String platformVersion;
+    String isHarmonyAnco;
     // Platform messages may fail, so we use a try/catch PlatformException.
     // We also handle the message potentially returning null.
     try {
-      platformVersion = await AncoEnv.isHarmonyAnco() ? '是' : '否';
+      isHarmonyAnco = await AncoEnv.isHarmonyAnco() ? '是' : '否';
     } on PlatformException {
-      platformVersion = 'Failed to get platform version.';
+      isHarmonyAnco = 'Failed to get platform version.';
     }
 
     // If the widget was removed from the tree while the asynchronous platform
@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
     if (!mounted) return;
 
     setState(() {
-      _platformVersion = platformVersion;
+      _isHarmonyAnco = isHarmonyAnco;
     });
   }
 
@@ -50,7 +50,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('Plugin example app')),
-        body: Center(child: Text('Running on: $_platformVersion\n')),
+        body: Center(child: Text('Running on Harmony Anco: $_isHarmonyAnco\n')),
       ),
     );
   }

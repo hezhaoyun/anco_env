@@ -1,4 +1,4 @@
-package com.example.anco_env
+package cn.chessroad.anco_env
 
 import io.flutter.embedding.engine.plugins.FlutterPlugin
 import io.flutter.plugin.common.MethodCall
