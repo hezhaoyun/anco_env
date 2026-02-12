@@ -1,6 +1,6 @@
 name: anco_env
 description: A Flutter plugin for detecting the HarmonyOS (Anco) environment and collecting comprehensive system environment information.
-version: 0.2.1
+version: 0.2.2
 homepage: https://github.com/hezhaoyun/anco_env
 repository: https://github.com/hezhaoyun/anco_env
 issue_tracker: https://github.com/hezhaoyun/anco_env/issues

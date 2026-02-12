@@ -22,7 +22,7 @@ Add `anco_env` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  anco_env: ^0.1.0
+  anco_env: ^0.2.2
 ```
 
 ### Usage
